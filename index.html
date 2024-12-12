@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://localhost:3000/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="containerr">
+        <h1>Code Converter</h1>
+        <div class="language-selection">
+            <div class="input">
+                <div class="input-source">
+                <label for="source-lang">Source Language:</label>
+                <select id="source-lang">
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                    <option value="c++">C++</option>
+                    <option value="c">C</option>
+                </select>
+                </div>
+                <div class="input-textfield">
+                    <textarea id="code-input" placeholder="Enter your code here..."></textarea>
+        
+                </div>
+    
+            </div>
+            <div class="output">
+                <div class="output-source">
+                    <label for="target-lang">Target Language:</label>
+                    <select id="target-lang">
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="c++">C++</option>
+                        <option value="c">C</option>
+                    </select>
+                </div>
+                <div class="output-textfield">
+                    <textarea id="code-output" placeholder="Converted code will appear here..." readonly></textarea>
+        
+                </div>
+            </div>
+           
+        </div>
+          
+    <div class="btn"><button id="convert-btn">Convert</button></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
