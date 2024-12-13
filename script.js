@@ -18,7 +18,7 @@ document.getElementById('convert-btn').addEventListener('click', () => {
        try {
         console.log("connecting to server");
         
-        const response = await fetch("http://localhost:3000/convert/" , 
+        const response = await fetch("https://codeconverter-1-alcu.onrender.com/convert/" , 
             {
             // mode : "no-cors",
             method : "post",
